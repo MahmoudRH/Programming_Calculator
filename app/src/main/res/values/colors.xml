@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="background">#464a58</color>
+    <color name="brand">#3aac5a</color>
+    <color name="brandDark">#2A783C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="lightGray">#C4C4C4</color>
+    <color name="darkGray">#919191</color>
+
+
+</resources>

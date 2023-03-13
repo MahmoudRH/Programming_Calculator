@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/paddingLarge"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hex_result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginNormal"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="@dimen/paddingSmall"
+        android:text="@string/hexResult"
+        android:textColor="@color/brand"
+        android:textSize="@dimen/textNormal"
+        app:layout_constraintBottom_toTopOf="@+id/decimal_result_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/decimal_result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginNormal"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="@dimen/paddingSmall"
+        android:text="@string/decimalResult"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textNormal"
+        app:layout_constraintBottom_toTopOf="@+id/octa_result_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/octa_result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginNormal"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="@dimen/paddingSmall"
+        android:text="@string/octaResult"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textNormal"
+        app:layout_constraintBottom_toTopOf="@+id/binary_result_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/binary_result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginNormal"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="@dimen/paddingSmall"
+        android:text="@string/binaryResult"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textNormal"
+        app:layout_constraintBottom_toTopOf="@+id/input_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/input_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginNormal"
+        android:layout_marginBottom="@dimen/marginNormal"
+        android:gravity="end"
+        tools:text="@string/inputResult"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textGiant"
+        app:layout_constraintBottom_toTopOf="@+id/equal_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/clear_btn"
+        style="@style/CalculatorButton.Operator"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="CA"
+        app:layout_constraintBottom_toBottomOf="@+id/equal_btn"
+        app:layout_constraintEnd_toEndOf="@+id/num7_btn"
+        app:layout_constraintStart_toStartOf="@+id/num7_btn" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/equal_btn"
+        style="@style/CalculatorButton.Equal"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="@dimen/marginNormal"
+        android:text="="
+        app:layout_constraintBottom_toTopOf="@+id/num9_btn"
+        app:layout_constraintEnd_toEndOf="@+id/num9_btn"
+        app:layout_constraintStart_toStartOf="@+id/num8_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/numE_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="E"
+        app:layout_constraintBottom_toBottomOf="@+id/num9_btn"
+        app:layout_constraintEnd_toEndOf="@+id/numD_btn"
+        app:layout_constraintStart_toStartOf="@+id/numD_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/numD_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="D"
+        app:layout_constraintBottom_toBottomOf="@+id/num6_btn"
+        app:layout_constraintEnd_toEndOf="@+id/numC_btn"
+        app:layout_constraintStart_toStartOf="@+id/numC_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/numC_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="C"
+        app:layout_constraintBottom_toBottomOf="@+id/num1_btn"
+        app:layout_constraintEnd_toEndOf="@+id/numB_btn"
+        app:layout_constraintStart_toStartOf="@+id/numB_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/numB_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/numA_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/num7_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="7"
+        app:layout_constraintBottom_toBottomOf="@+id/num9_btn"
+        app:layout_constraintEnd_toEndOf="@+id/num4_btn"
+        app:layout_constraintStart_toStartOf="@+id/num4_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/num8_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/num9_btn"
+        app:layout_constraintEnd_toEndOf="@+id/num5_btn"
+        app:layout_constraintStart_toStartOf="@+id/num5_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/num9_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="@dimen/marginNormal"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/num6_btn"
+        app:layout_constraintEnd_toEndOf="@+id/num6_btn"
+        app:layout_constraintStart_toEndOf="@+id/num5_btn" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/num4_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="4"
+        app:layout_constraintBottom_toBottomOf="@+id/num6_btn"
+        app:layout_constraintEnd_toEndOf="@+id/num1_btn"
+        app:layout_constraintStart_toStartOf="@+id/num1_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/num5_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="@+id/num6_btn"
+        app:layout_constraintEnd_toEndOf="@+id/num2_btn"
+        app:layout_constraintStart_toStartOf="@+id/num2_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/num6_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="@dimen/marginNormal"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/num3_btn"
+        app:layout_constraintEnd_toEndOf="@+id/num3_btn"
+        app:layout_constraintStart_toStartOf="@+id/num3_btn" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/num1_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/num2_btn"
+        app:layout_constraintEnd_toEndOf="@+id/numA_btn"
+        app:layout_constraintStart_toStartOf="@+id/numA_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/num2_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@+id/num3_btn"
+        app:layout_constraintEnd_toEndOf="@+id/num0_btn"
+        app:layout_constraintStart_toStartOf="@+id/num0_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/num3_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="@dimen/marginNormal"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/separator_btn"
+        app:layout_constraintEnd_toEndOf="@+id/separator_btn"
+        app:layout_constraintStart_toStartOf="@+id/separator_btn" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/num0_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/numB_btn"
+        app:layout_constraintEnd_toStartOf="@+id/separator_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numA_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/separator_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:enabled="false"
+        android:text=","
+        app:layout_constraintBottom_toBottomOf="@+id/numB_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num0_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/numA_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="A"
+        app:layout_constraintBottom_toBottomOf="@+id/numB_btn"
+        app:layout_constraintEnd_toStartOf="@+id/num0_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numB_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/numF_btn"
+        style="@style/CalculatorButton.Number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="F"
+        app:layout_constraintBottom_toBottomOf="@+id/equal_btn"
+        app:layout_constraintEnd_toEndOf="@+id/numE_btn"
+        app:layout_constraintStart_toStartOf="@+id/numE_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">programming Calculator</string>
+    <string name="hexResult">"HEX \t0"</string>
+    <string name="decimalResult">"DEC \t0"</string>
+    <string name="octaResult">"OCT \t0"</string>
+    <string name="binaryResult">"BIN  \t0"</string>
+    <string name="inputResult">2448</string>
+</resources>
